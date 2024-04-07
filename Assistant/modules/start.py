@@ -19,10 +19,22 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     await add_served_user(message.from_user.id)
     await context.bot.send_message(
         chat_id=LOGGER_ID,
-        text=f"<b>ɴᴇᴡ ᴜsᴇʀ :</b>\nᴜsᴇʀ: {mention_html(user.id, user.first_name)}\n<b>ᴜsᴇʀɴᴀᴍᴇ:</b> @{user.username}\n<b>ɪᴅ:</b> <code>{user.id}</code>",
+        text=f"<b>ɴᴇᴡ ᴜsᴇʀ!!👀</b>\nɴᴀᴍᴇ: {mention_html(user.id, user.first_name)}\n<b>ᴜsᴇʀɴᴀᴍᴇ:</b> @{user.username}\n<b>ɪᴅ:</b> <code>{user.id}</code>",
     )
     await message.reply_text(
         
         text=f"ʜᴇʟʟᴏ {mention_html(user.id, user.first_name)}.😌\n\nYou can contact me using this bot.\n\n<b>Send <code>Hello</code> I will Reply Soon...</b>",
-    )
+
+        reply_markup=InlinekeyboardMarkup(
+
+            [
+                [
+                    InlineKeyboardbutton("hi", url="t.me//nihh_all"),
+                ]
+            ]
+            
+        )
+        )
+        
+    
     return
