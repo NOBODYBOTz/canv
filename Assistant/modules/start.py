@@ -25,11 +25,11 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
         
         text=f"ʜᴇʟʟᴏ {mention_html(user.id, user.first_name)}.😌\n\nYou can contact me using this bot.\n\n<b>Send <code>Hello</code> I will Reply Soon...</b>",
 
-        reply_markup=InlinekeyboardMarkup(
+        reply_markup=InlineKeyboardMarkup(
 
             [
                 [
-                    InlineKeyboardbutton("hi", url="t.me//nihh_all"),
+                    InlineKeyboardButton("hi", url="t.me//nihh_all"),
                 ]
             ]
             
