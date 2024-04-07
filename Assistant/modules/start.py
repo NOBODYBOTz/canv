@@ -23,6 +23,6 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     )
     await message.reply_text(
         
-        text=f"ʜᴇʟʟᴏ {mention_html(user.id, user.first_name)}.😌\n\nYou can contact me using this bot.\nSens Your Message Here I will Reply Soon",
+        text=f"ʜᴇʟʟᴏ {mention_html(user.id, user.first_name)}.😌\n\nYou can contact me using this bot.\n\nSend <code>Hello</code> I will Reply Soon...",
     )
     return
