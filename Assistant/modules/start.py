@@ -22,8 +22,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
         text=f"<b>ɴᴇᴡ ᴜsᴇʀ :</b>\nᴜsᴇʀ: {mention_html(user.id, user.first_name)}\n<b>ᴜsᴇʀɴᴀᴍᴇ:</b> {user.username}\n<b>ɪᴅ:</b> <code>{user.id}</code>",
     )
     await message.reply_text(
-    
-        text=f"ʜᴇʟʟᴏ {mention_html(user.id, user.first_name)}.\n\nᴀssɪsᴛᴀɴᴛ ᴏғ {mention_html(owner.id, owner.first_name)}\nғᴇᴇʟ ғʀᴇᴇ ᴛᴏ sᴇɴᴅ ᴍᴇssᴀɢᴇ ʜᴇʀᴇ, ᴅᴏɴ'ᴛ ᴅᴍ",
         
+        text=f"ʜᴇʟʟᴏ {mention_html(user.id, user.first_name)}.😌\n\nYou can contact me using this bot.\nSens Your Message Here I will Reply Soon",
     )
     return
