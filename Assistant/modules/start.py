@@ -20,8 +20,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
         chat_id=LOGGER_ID,
         text=f"<b>ɴᴇᴡ ᴜsᴇʀ :</b>\nᴜsᴇʀ: {mention_html(user.id, user.first_name)}\n<b>ᴜsᴇʀɴᴀᴍᴇ:</b> {user.username}\n<b>ɪᴅ:</b> <code>{user.id}</code>",
     )
-    await message.reply_photo(
-        "",
-        caption=f"ʜᴇʟʟᴏ {mention_html(user.id, user.first_name)}.\n\nᴀssɪsᴛᴀɴᴛ ᴏғ {mention_html(owner.id, owner.first_name)}\nғᴇᴇʟ ғʀᴇᴇ ᴛᴏ sᴇɴᴅ ᴍᴇssᴀɢᴇ ʜᴇʀᴇ, ᴅᴏɴ'ᴛ ᴅᴍ",
-        reply_markup=button,
+    await send_message(
+        text=f"ʜᴇʟʟᴏ {mention_html(user.id, user.first_name)}.\n\nᴀssɪsᴛᴀɴᴛ ᴏғ {mention_html(owner.id, owner.first_name)}\nғᴇᴇʟ ғʀᴇᴇ ᴛᴏ sᴇɴᴅ ᴍᴇssᴀɢᴇ ʜᴇʀᴇ, ᴅᴏɴ'ᴛ ᴅᴍ",
+        
     )
