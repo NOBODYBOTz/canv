@@ -21,9 +21,9 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
         chat_id=LOGGER_ID,
         text=f"<b>ɴᴇᴡ ᴜsᴇʀ :</b>\nᴜsᴇʀ: {mention_html(user.id, user.first_name)}\n<b>ᴜsᴇʀɴᴀᴍᴇ:</b> {user.username}\n<b>ɪᴅ:</b> <code>{user.id}</code>",
     )
-    await message.reply_photo(
-        "https://telegra.ph/file/8600403902c26c406ad80.jpg",
-        caption=f"ʜᴇʟʟᴏ {mention_html(user.id, user.first_name)}.\n\nᴀssɪsᴛᴀɴᴛ ᴏғ {mention_html(owner.id, owner.first_name)}\nғᴇᴇʟ ғʀᴇᴇ ᴛᴏ sᴇɴᴅ ᴍᴇssᴀɢᴇ ʜᴇʀᴇ, ᴅᴏɴ'ᴛ ᴅᴍ",
+    await message.reply_sticker(
+        sticker="CAACAgIAAxkBAAEVZ65kduZn7WTQXlyDFErYqb0BvyoIEQACVQADr8ZRGmTn_PAl6RC_LwQ",
+        text=f"ʜᴇʟʟᴏ {mention_html(user.id, user.first_name)}.\n\nᴀssɪsᴛᴀɴᴛ ᴏғ {mention_html(owner.id, owner.first_name)}\nғᴇᴇʟ ғʀᴇᴇ ᴛᴏ sᴇɴᴅ ᴍᴇssᴀɢᴇ ʜᴇʀᴇ, ᴅᴏɴ'ᴛ ᴅᴍ",
         
     )
     return
