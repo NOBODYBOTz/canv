@@ -29,7 +29,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 
             [
                 [
-                    InlineKeyboardButton("hi", url="t.me//nihh_all"),
+                    InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ ᴄʜᴀɴɴᴇʟ", url="https://t.me/TG_BotCreator"),
                 ]
             ]
             
