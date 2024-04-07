@@ -24,6 +24,6 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     await message.reply_photo(
         "https://telegra.ph/file/8600403902c26c406ad80.jpg",
         caption=f"ʜᴇʟʟᴏ {mention_html(user.id, user.first_name)}.\n\nᴀssɪsᴛᴀɴᴛ ᴏғ {mention_html(owner.id, owner.first_name)}\nғᴇᴇʟ ғʀᴇᴇ ᴛᴏ sᴇɴᴅ ᴍᴇssᴀɢᴇ ʜᴇʀᴇ, ᴅᴏɴ'ᴛ ᴅᴍ",
-        reply_markup=button,
+        
     )
     return
