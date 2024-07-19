@@ -3,3 +3,4 @@ python-dotenv
 python-telegram-bot[all]
 pymongo
 motor
+Flask
