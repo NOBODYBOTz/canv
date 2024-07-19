@@ -1,7 +1,7 @@
 #!/bin/sh
 
-# Any initial setup or commands
-# For example, echo a message or run setup scripts
+# Run health check server in the background
+python health_check.py &
 
-# Start the Python application
+# Start the bot
 exec python -m Assistant.__main__
