@@ -1,5 +1,3 @@
-
-
 docker build -t TG-Livegram-Bot .
 docker run -it TG-Livegram-Bot
 # Any initial setup or commands
