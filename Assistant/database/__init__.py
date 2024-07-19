@@ -1,12 +1,12 @@
 from sys import exit
-
-from async_mongo import AsyncClient
-
+from motor.motor_asyncio import AsyncIOMotorClient
 from Assistant import LOGGER
 from config import DB_URI
 
 try:
-    mongo = AsyncClient(DB_URI)
+    # Create an instance of AsyncIOMotorClient
+    mongo = AsyncIOMotorClient(DB_URI)
+    # Access the database
     db = mongo["Assistant"]
     LOGGER.info("Connected to your Mongo Database.")
 except Exception as e:
