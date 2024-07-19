@@ -1,13 +1,6 @@
-FROM python:3.9-slim
-
-WORKDIR /usr/src/app
-
+FROM python:3.12
+WORKDIR /app
+COPY requirements.txt requirements.txt
+RUN pip install --upgrade pip && pip install -r requirements.txt
 COPY . .
-
-RUN pip install --no-cache-dir -r requirements.txt
-
-EXPOSE 80
-
-ENV NAME Asistent
-
 CMD ["bash", "start"]
