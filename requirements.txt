@@ -3,4 +3,4 @@ python-dotenv
 python-telegram-bot[all]
 pymongo
 python-dotenv
-
+async-mongo
