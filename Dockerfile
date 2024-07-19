@@ -14,4 +14,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 ENV PYTHONUNBUFFERED=1
 
 # Run bot.py when the container launches
-CMD ["python", "-m", "Assistant.__main__"]
+CMD ["bash", "start.sh"]
