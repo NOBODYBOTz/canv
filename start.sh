@@ -1,7 +1,8 @@
-#!/bin/sh
 
-# Build the Docker image
+
 docker build -t TG-Livegram-Bot .
+docker run -it TG-Livegram-Bot
+# Any initial setup or commands
+# For example, echo a message or run setup scripts
 
-# Run the Docker container with an interactive shell
-docker run -it TG-Livegram-Bot /bin/sh
+exec python -m Assistant.__main__
