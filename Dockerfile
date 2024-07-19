@@ -13,5 +13,11 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Define environment variable
 ENV PYTHONUNBUFFERED=1
 
-# Run bot.py when the container launches
-CMD ["bash", "start.sh"]
+# Copy the start.sh script into the container
+COPY start.sh /app/start.sh
+
+# Make the start.sh script executable
+RUN chmod +x /app/start.sh
+
+# Run start.sh when the container launches
+CMD ["/app/start.sh"]
