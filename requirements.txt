@@ -3,4 +3,3 @@ python-dotenv
 python-telegram-bot[all]
 pymongo
 motor
-git+https://github.com/Abishnoi69/async_mongo.git
