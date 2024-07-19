@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  asistentbot:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: asistentbot:latest
+    container_name: asistentbot
+    ports:
+      - "80:80" # Adjust or remove this line if not exposing any ports
+    restart: unless-stopped
