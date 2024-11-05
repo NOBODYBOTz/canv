@@ -6,7 +6,7 @@ load_dotenv()
 
 TOKEN = getenv("TOKEN", None)
 "Telegram bot token obtained from botfather"
-DB_URI = getenv("MONGO_URL", "mongodb+srv://avinashkakde646:avinashkakde646@cluster0.jlubkn6.mongodb.net/?retryWrites=true&w=majority")
+DB_URI = getenv("MONGO_URL", None)
 "database url (mongo)"
 OWNER_ID = int(getenv("OWNER_ID", 1715861188))
 "Telegram ID of the bot owner"
